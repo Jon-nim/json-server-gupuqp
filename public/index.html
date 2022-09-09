@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Student Log</title>
+    <meta charset="utf8" />
+    <link
+      rel="icon"
+      href="https://cdn.sstatic.net/Sites/stackoverflow/Img/favicon.ico"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <form>
+      <select
+        aria-label="Select Course"
+        id="course"
+        name="course"
+        data-cy="course_select"
+      ></select
+      ><br />
+      <label for="uvuId">UVU ID</label><br />
+      <input type="text" id="uvuId" name="uvuId" data-cy="uvuId_input" />
+
+      <h3 id="uvuIdDisplay" data-cy="uvuIdDisplay">
+        Student Logs for 10234567
+      </h3>
+      <ul data-cy="logs"></ul>
+      <label>New Log</label><br />
+      <textarea
+        style="height: 75px"
+        aria-label="add log textarea"
+        data-cy="log_textarea"
+      ></textarea
+      ><br />
+
+      <button type="submit" data-cy="add_log_btn">Add Log</button>
+    </form>
+
+    <script src="script.js"></script>
+  </body>
+</html>
+
+<!-- TODO: add appropriate comments you feel are necessary, if any, for the next coder to understand -->
+<!-- TODO: move all TODOs that done above to down below here and change the label to DONE:. -->
+
+<!-- TODO: set the lang attribute to American English -->
+<!-- TODO: set the characterset to utf8 -->
+<!-- TODO: temporarily use stackoverflow's favicon. "https://cdn.sstatic.net/Sites/stackoverflow/Img/favicon.ico"-->
+<!-- TODO: Load your CSS file -->
+<!-- Done: write `10234567` as sample data on the input field below  -->
+<!-- Done: Ensure the character length never exceeds 8 -->
+<!-- TODO: Only numbers, no letters or other characters-->
+<!-- TODO: Don't show the uvu id text input box until a course was selected above. -->
+<!-- TODO: Script tag to your javascript file -->
+
+<!-- TODO: If course ever becomes unselected, don't show the uvu id text input box.-->
+<!-- Use your own unique URL you recorded, not the sample one above. -->
+<!-- You must replace them with dynamic data by ajaxing GET https://json-server-ft3qa5--3000.local.webcontainer.io/logs?courseId=<courseID>&uvuId=<uvuID> -->
+
+<!-- TODO: When character length reaches 8 and it's only digits, fire off ajax request, if 200 or 304, display results, else appropriately guide the user. -->
+<!-- TODO: The following options are currently static values to show you sample data.  -->
+<!-- Use fetch to replace them with dynamic data from GET https://json-server-1msk9r--3000.local.webcontainer.io/api/v1/courses -->
+<!-- TODO: Click anywhere on the log to toggle visibility of the log (text only, not the date)-->
+<!-- TODO: The following options are currently static values to show you an example.  -->
+<!-- TODO: Button should be disabled until there are logs displayed -->
