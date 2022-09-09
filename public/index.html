@@ -19,7 +19,13 @@
       ></select
       ><br />
       <label for="uvuId">UVU ID</label><br />
-      <input type="text" id="uvuId" name="uvuId" data-cy="uvuId_input" />
+      <input
+        type="text"
+        id="uvuId"
+        name="uvuId"
+        data-cy="uvuId_input"
+        maxlength="8"
+      />
 
       <h3 id="uvuIdDisplay" data-cy="uvuIdDisplay">
         Student Logs for 10234567
@@ -35,7 +41,8 @@
 
       <button type="submit" data-cy="add_log_btn">Add Log</button>
     </form>
-
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="JQL.js"></script>
     <script src="script.js"></script>
   </body>
 </html>
