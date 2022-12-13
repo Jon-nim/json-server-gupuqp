@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <form>
+    <form id="form">
       <select
         aria-label="Select Course"
         id="course"
@@ -33,6 +33,7 @@
       <ul data-cy="logs"></ul>
       <label>New Log</label><br />
       <textarea
+        id="textareaLog"
         style="height: 75px"
         aria-label="add log textarea"
         data-cy="log_textarea"
